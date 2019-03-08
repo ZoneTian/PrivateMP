@@ -6,13 +6,40 @@
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/categoryList/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "zoneTest",
+    "navigationBarTextStyle": "black"  
+    },
+    "tabBar":{
+      "color":"#333",
+      "backgroundColor": "#fff",
+      "borderStyle": "black",
+      "selectedColor":"#000",
+      "list":[
+        {
+          "pagePath":"pages/categoryList/index",
+          "text":"列表",
+          "iconPath":"images/lockers.png",
+          "selectedIconPath":"images/lockers.png"
+        },
+        {
+          "pagePath":  "pages/index/index",
+          "text":"富文本",
+          "iconPath":"images/newspaper.png",
+          "selectedIconPath":"images/newspaper.png"
+        },
+        {
+          "pagePath":"pages/deployFunctions/deployFunctions",
+          "text":"图片",
+          "iconPath":"images/yearbook.png",
+          "selectedIconPath":"images/yearbook.png"
+        }
+    ]
   }
 }
