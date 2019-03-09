@@ -1,4 +1,4 @@
-//index.js
+//.js
 const app = getApp()
 
 Page({
@@ -7,10 +7,26 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    details: [
+
+    ]
   },
 
   onLoad: function() {
+    let _this = this
+    wx.request({
+      url:"http://rap2api.taobao.org/app/mock/25013/user/backlists",
+      method:"get",
+      success:(data)=>{
+        console.log(data.data.results)
+        _this.setData({
+          details : data.data.results.details
+        })
+        // console
+        // _this.details = data.details
+        
+      }
+    })
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -35,7 +51,23 @@ Page({
       }
     })
   },
-
+  onbottom:function (){
+    console.log(234)
+    let _this = this
+    wx.request({
+      url:"http://rap2api.taobao.org/app/mock/25013/user/backlists",
+      method:"get",
+      success:(data)=>{
+        // this.details = this.
+        // var a = this.details
+         let datas = this.data.details.concat(data.data.results.details)
+         _this.setData({
+           details : datas
+         })
+        console.log(this.data)
+      }
+    })
+  },
   onGetUserInfo: function(e) {
     if (!this.logged && e.detail.userInfo) {
       this.setData({

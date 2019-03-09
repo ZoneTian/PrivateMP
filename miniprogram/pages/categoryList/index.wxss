@@ -1,4 +1,4 @@
-/**index.wxss**/
+/**list.wxss**/
 
 page {
   background: #f6f6f6;
@@ -6,7 +6,18 @@ page {
   flex-direction: column;
   justify-content: flex-start;
 }
-
+.list {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #ffffff;
+  padding:10px;
+  font-size:16px;
+  box-shadow:0 5px 10px 0 rgba(0, 0, 0, 0.3) 
+}
+.list-content  {
+  display: flex;
+  flex-direction:row;
+}
 .userinfo, .uploader, .tunnel {
   margin-top: 40rpx;
   height: 140rpx;
