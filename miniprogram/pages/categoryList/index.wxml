@@ -1,10 +1,9 @@
 <!--Listinddfsdfx.wxml-->
 <view class="container">
-  <view>目前在小黑屋的用户</view>
-  <scroll-view   style="height:400px" scroll-y bindscrolltolower="onbottom" >
+  <view class="title">目前在小黑屋的用户</view>
+  <scroll-view   style="height:{{scrollHeight}}" scroll-y bindscrolltolower="onbottom" >
       <view class="list" wx:for="{{details}}" wx:key="{{i}}">
          <view class="list-content"> <view>昵  称: </view> <view> {{item.nickName}}</view></view>
-
          <view class="list-content"> <view>电  话: </view><view>{{item.mobile}}</view></view>
          <view class="list-content"><view>邮  箱: </view><view>{{item.email}}</view></view>
       </view>

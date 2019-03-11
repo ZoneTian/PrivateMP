@@ -1,9 +1,11 @@
 <!--index.wxml-->
-<view class="container">
-  <view >
-    hello
-    
-  </view>
+ <buttonx></buttonx>
+  <import src="../../wxParse/wxParse.wxml"  />
+ <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+      
+
   <!-- 用户 openid
   <view class="userinfo">
     <button 
@@ -43,4 +45,3 @@
     </navigator>
   </view> -->
 
-</view>

@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -41,6 +41,20 @@
 					"id": -1,
 					"name": "list",
 					"pathName": "pages/categoryList/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "image",
+					"pathName": "pages/getImage/index",
 					"scene": null
 				}
 			]
