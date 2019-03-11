@@ -11,7 +11,7 @@
 	},
 	"appid": "wx823c203882e3fd5f",
 	"projectname": "MP",
-	"libVersion": "2.2.5",
+	"libVersion": "2.6.1",
 	"condition": {
 		"search": {
 			"current": -1,

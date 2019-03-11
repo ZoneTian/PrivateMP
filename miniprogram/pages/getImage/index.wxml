@@ -29,10 +29,21 @@
    <button 
       open-type="getUserInfo" 
       bindgetuserinfo = "onCanvas"
-      class="userinfo-nickname" >生成名片</button>
+      class="userinfo-nickname" >生成名片和保存图片</button>
 </view>
 <view>
   <canvas canvas-id="card" style="height:200ox;width:200px;margin:0 auto"></canvas>
+</view>
+
+  <view>
+   <view class="userinfo">
+   <button 
+      open-type="share"
+      class="userinfo-nickname"
+      disabled = "{{show}}"
+       >分享我的名片</button>
+  </view>
+
 </view>
 <!-- 新建云函数 -->
 <!-- <view class="uploader">
